@@ -6,6 +6,7 @@
 export const createRequest = (options) => {
   const xhr = new XMLHttpRequest()
   xhr.open(options.method || 'GET', options.url)
+  xhr.withCredentials = true
   xhr.responseType = 'json'
   if (options.headers) {
     Object.keys(options.headers).forEach(key => {

@@ -846,6 +846,7 @@ export default {
       let queryString = querys.length ? (file.putAction.indexOf('?') === -1 ? '?' : '&') + querys.join('&') : ''
       let xhr = new XMLHttpRequest()
       xhr.open('PUT', file.putAction + queryString)
+      xhr.withCredentials = true
       return this.uploadXhr(xhr, file, file.file)
     },
 
@@ -867,6 +868,7 @@ export default {
       form.append(this.name, file.file, file.file.filename || file.name)
       let xhr = new XMLHttpRequest()
       xhr.open('POST', file.postAction)
+      xhr.withCredentials = true
       return this.uploadXhr(xhr, file, form)
     },
 
