@@ -1,5 +1,5 @@
 {
-  "name": "vue-upload-component",
+  "name": "vue-upload-with-credential",
   "description": "Vue.js file upload component, Multi-file upload, Upload directory, Drag upload, Drag the directory, Upload multiple files at the same time, html4 (IE 9), `PUT` method, Customize the filter",
   "version": "2.8.21",
   "author": "LianYue",
@@ -16,7 +16,7 @@
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lian-yue/vue-upload-component.git"
+    "url": "git+https://github.com/compozh/vue-upload-with-credential.git"
   },
   "keywords": [
     "javascript",
